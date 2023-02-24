@@ -1,0 +1,66 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* 不平铺 居中 */
+    background: url(../images/login_bg.jpg) no-repeat center;
+    /* ;图片保持比例放大或缩小使X轴与Y轴都铺满整个容器，但图片超出容器部分会被裁剪掉，图片不变形 */
+    background-size: cover;
+}
+
+/* 登录注册区域样式 */
+.loginBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+
+}
+
+/* 标题部分 */
+.titleBox {
+    height: 60px;
+    background: url(../images/login_title.png) no-repeat center;
+}
+
+/* 注册区域 */
+.toReg {
+    /* 默认隐藏 */
+    display: none;
+
+}
+
+/* 表单区域 */
+.layui-form {
+    padding: 0 30px;
+}
+
+/* 去注册 */
+.links {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.links a {
+    font-size: 12px;
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-form-item .layui-input {
+    padding-left: 32px;
+}
+
+.layui-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
