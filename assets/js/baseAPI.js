@@ -4,7 +4,7 @@
 $.ajaxPrefilter(function (options) {
     console.log('options', options.url);
     //在发起真正的ajax请求之前 同意拼接请求的根路径
-    options.url = 'http://www.liulongbin.top:3007' + options.url
+    options.url = 'http://api-breakingnews-web.itheima.net' + options.url
     console.log('options', options.url);
     // 判断是否是请求的有权限的接口
     if (options.url.indexOf('/my') != -1) {
